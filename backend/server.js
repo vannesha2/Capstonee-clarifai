@@ -20,7 +20,7 @@ app.post('/api/detect-hoax', async (req, res) => {
         }
 
         // Tembak langsung ke server FastAPI Anda (Menggunakan localhost:8000/predict)
-        const fastApiResponse = await axios.post('http://localhost:8000/predict', {
+        const fastApiResponse = await axios.post('https://capstonee-clarifai-production.up.railway.app/predict', {
             text: text
         });
 
