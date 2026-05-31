@@ -91,7 +91,7 @@ function Analyze() {
             </p>
 
             <p className="mt-2">
-              <strong>Tingkat Keyakinan:</strong> {result.confidence}%
+              <strong>Tingkat Keyakinan:</strong> {(result.confidence * 100).toFixed(2)}%
             </p>
 
             <div className="mt-4 bg-blue-50 p-4 rounded-xl">
